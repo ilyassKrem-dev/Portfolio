@@ -20,6 +20,7 @@ function Skills() {
 
     const learningSkillsElement = learningSkills.map((skill,index) => {
         return <Learning 
+                key={index}
                 skillImg={skill.img}
                 skillName={skill.name}/>
     })

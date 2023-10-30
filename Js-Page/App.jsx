@@ -6,15 +6,16 @@ import About from "./components/About"
 
 
 function App() {
-    const [change , setChange] = useState(2)
+    const [change , setChange] = useState(1)
     function changeSite(num) {
       setChange(num)
     }
     return (
       <div>
-          <Navbar change={changeSite}/>
+          <Navbar changeFunc={changeSite} change={change} />
           {change === 1 &&<Main />}
-          <About />
+          {change === 2 &&<About />}
+          
       </div>
     )
   }
