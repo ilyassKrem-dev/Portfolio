@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    height: 66px;
+    flex-shrink: 0;
+    background: #0B0B0B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.nav--bar {
+    display: flex;
+    margin-right: 65px;
+}
+.nav--bar > div {
+    color: white;
+    display: flex;
+    width: 147px;
+    height: 46px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.nav--bar .nav--div-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.white-box {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    z-index: 999;
+}
+
+
+.main--background {
+    
+    height: 86.5vh;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.main--screen {
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(95deg, #D7D7D7, #D7D7D7 49.9%, black 50%, black);
+    height: 86.5vh;
+    width: 100%;
+    justify-content: space-around;
+}
+.Text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+}
+.div-text  > #Hi-class{
+    color: #000;
+    font-family: Raleway , Arial;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 54px;
+}
+.div-text > h1 {
+    color: #000;
+    font-family: Raleway;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.div-text #domain-class {
+    color: #909090; 
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 120px;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    
+}
+.social-media > a{
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 6px 10px;
+    margin-right: 31px;
+    cursor: pointer;
+}
+/*.main-black-background {
+    background-color: black;
+    height: 86.8vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.image-place {
+    /*background-color: black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.image-place > svg {
+    width: 100%;
+}
+.image-place > img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
