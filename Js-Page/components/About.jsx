@@ -1,9 +1,9 @@
-
+import Skills from "./sub-comp/About-sub/Skills"
 import "../Styles/about.css"
-import htmlimg from "../Images/html.svg"
+
 function About() {
 
-
+    
 
     return (
         <section>
@@ -30,20 +30,10 @@ function About() {
                         <p className="explore-p">I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
                     </div>
                 </div>
-                <div className="line"></div>
-                <div className="skills-box">
-                    <h1>SKILLS</h1>
-                </div>
-
-                <div className="skills-info">
-                    <h5>USING NOW:</h5>
-                    <div className="Lang-using">
-                        <div>
-                            <img src="" alt="" />
-                            <p>HTML5</p>
-                        </div>
-                    </div>
-                </div>
+                <div className="line line2"></div>
+                <Skills />
+                
+                
             </div>      
         </section>
     )
