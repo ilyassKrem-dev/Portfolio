@@ -2,7 +2,7 @@
 import Learning from "./Learning"
 import imgData from "./img-data"
 import { useState } from "react"
-
+import "./Styles/skills.css"
 
 function Skills() {
 

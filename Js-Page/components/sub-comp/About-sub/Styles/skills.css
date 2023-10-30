@@ -1,0 +1,72 @@
+/*-------------------Skills-info----*/
+.skills-info {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 60%; 
+    margin-top: 80px;
+}
+.skills-info > h5 {
+    color: #000;
+    font-family: Montserrat , Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5.561px;
+    
+}
+
+.Lang-using{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 75px 0;
+    row-gap: 55px;
+    
+}
+.Lang-using div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 25%;    
+    
+}
+.Lang-using div > img{
+    width: 50px;
+    margin-bottom: 17px;
+}
+.Lang-using div > p{
+    color: #000;
+    font-family: Montserrat , Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.249px;
+    
+}
+@media (max-width: 1018px) {
+    .Lang-using{
+        display: flex;
+        justify-content: center;
+        margin: 75px 0;
+        
+    }
+}
+@media (max-width: 910px) {
+    .Lang-using{
+        display: flex;
+        justify-content: center;
+        margin: 75px 0;
+        
+    }
+    .Lang-using div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-basis: 50%;    
+        
+    }
+}
