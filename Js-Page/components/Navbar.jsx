@@ -7,8 +7,11 @@ import { Outlet, Link } from "react-router-dom";
 function Navbar(props) {
     const [change , setChange] = useState(0)
     const [navItems , setNavItems] = useState([{
+        id:1,
+        name:"Home"
+    },{
         id:2,
-        name:"About me"
+        name:"About"
     },
     {
         id:3,
@@ -20,7 +23,7 @@ function Navbar(props) {
     },
     {
         id:5,
-        name:"Contact me"
+        name:"Contact"
     },
 
 ])

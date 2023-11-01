@@ -35,7 +35,7 @@ export default {
             name:"React"
         },{
            site:'https://tailwindcss.com/',
-           name:"TailWind Css"
+           name:"TailWind"
         }]
     }]
 

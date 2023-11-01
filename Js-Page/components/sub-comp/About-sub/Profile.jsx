@@ -19,7 +19,7 @@ function Profile() {
             <div className="explore-info">
                 <div className="development box">
                     <div className="icon devle"></div>
-                    <h3 className="explore-h3">Development</h3>
+                    <h3 className="explore-h3">DEVELOPMENT</h3>
                     <p className="explore-p">I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
                 </div>
                 <div className="maintenance box">

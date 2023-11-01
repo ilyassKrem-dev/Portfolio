@@ -48,6 +48,7 @@
     height: 12px;
     flex-shrink: 0;
     background: url("../../../../Images/Line.png");
+    background-repeat: no-repeat;
 }
 .line2{
     margin: 80px 0;
@@ -90,7 +91,6 @@
     font-family: "Open Sans", Arial;
     font-size: 14px;
     font-style: normal;
-    font-weight: 300;
     line-height: normal;
     margin-left: 52px;
 }
@@ -105,9 +105,40 @@
         align-items: center;
     }
     .explore-info .box {
+        
         padding: 0px;
     }
     .explore-p {
         margin-left:30px;
     }
+    .about-box{
+        border: 8px solid #000;
+        background: rgba(255, 255, 255, 0.00);
+        padding: 0.5rem 60px;
+    }
+}
+@media (max-width: 400px) {
+    .explore-info .box {
+        width: 70%;
+        padding: 0px;
+    }
+    .about-box{
+        
+        padding: 0.5rem 6vw;
+    }
+    .about-box > h1{
+        letter-spacing: 0;
+    }
+    .explore-h3 {
+        font-size: 7vw;
+        letter-spacing: 0;
+    }
+    .explore-p {
+        font-size: 0.875rem;
+        
+    }
+    .line {
+        width: 10rem;
+    }
+    
 }
