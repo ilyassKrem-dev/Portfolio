@@ -1,9 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+body {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0.00) 0%, rgba(1, 1, 1, 0.16) 100%), #FFF;
+}
 
 .white-box {
     width: 100%;
@@ -35,7 +41,7 @@
 .Text-box {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     height: 100%;
 }

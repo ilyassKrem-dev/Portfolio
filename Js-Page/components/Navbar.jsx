@@ -2,8 +2,10 @@
 
 import { useState } from "react"
 import "../Styles/navbar.css"
+import { Outlet, Link } from "react-router-dom";
+
 function Navbar(props) {
-    
+    const [change , setChange] = useState(0)
     const [navItems , setNavItems] = useState([{
         id:2,
         name:"About me"
@@ -14,7 +16,7 @@ function Navbar(props) {
     },
     {
         id:4,
-        name:"Portfolio"
+        name:"Work"
     },
     {
         id:5,
@@ -24,27 +26,30 @@ function Navbar(props) {
 ])
     
     function changeStyle(num) {
-        props.changeFunc(num)
+        setChange(num)
 
     }
    
     
     const navItemsElements = navItems.map((item , index) => {
         const styles ={
-            color:item.id === props.change ? "black" : ""
+            color:item.id === change ? "black" : ""
         }
         return (
-            <div key={index} onClick={() => changeStyle(item.id)}  className={props.change === item.id ? "nav--div-text navStyle" : "nav--div-text"} style={styles}>{item.name}</div>
+            <Link to={`/${item.name.split(" ")[0]}`} key={index} onClick={() => changeStyle(item.id)}  className={  change === item.id ? "link-nav nav--div-text navStyle" : "link-nav nav--div-text"} style={styles}>{item.name}</Link>
         )
     })
 
 
     return (
-        <nav>
-            <div className="nav--bar">
-                {navItemsElements}
-            </div>
-        </nav>
+        <>
+            <nav>
+                <div className="nav--bar">
+                    {navItemsElements}
+                </div>
+            </nav>
+            <Outlet />
+        </>
     )
 }
 

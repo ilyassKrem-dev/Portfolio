@@ -1,10 +1,10 @@
-.about-box , .skills-box {
+.about-box{
     border: 8px solid #000;
     background: rgba(255, 255, 255, 0.00);
     padding: 15px 60px;
 }
 
-.about-box > h1 , .skills-box > h1 {
+.about-box > h1{
     color: #000;
     text-align: center;
     font-family: Montserrat ,Arial;

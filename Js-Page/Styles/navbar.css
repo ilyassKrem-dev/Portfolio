@@ -11,8 +11,9 @@ nav {
 }
 .nav--bar {
     display: flex;
+    align-items: center;
 }
-.nav--bar > div {
+.nav--bar > .link-nav {
     color: white;
     display: flex;
     flex-direction: column;
@@ -21,11 +22,12 @@ nav {
     margin-right: 30px;
     cursor: pointer;
     transition: opacity 0.2s;
+    text-decoration: none;
 }
-.nav--bar >div:hover{
+.nav--bar >.link-nav:hover{
     opacity: 0.8;
 }
-.nav--bar >div:active{
+.nav--bar >.link-nav:active{
     opacity: 0.5;
 }
 .nav--bar .nav--div-text {
@@ -44,7 +46,7 @@ nav {
     padding: 7px;
 }
 @media (max-width:750px) {
-    .nav--bar > div {
-        margin-right: 15px;
+    .nav--bar > .link-nav {
+        margin-right: 12px;
     }
 }
