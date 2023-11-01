@@ -2,7 +2,7 @@
 
 ### About
 A personal website built using React & tailwindcss and some css
-since i didnt start using tailwindcss till half.
+since i didnt start using tailwindcss untill i made half the site.
 
 ### Features
 - Simple design & focused content.
