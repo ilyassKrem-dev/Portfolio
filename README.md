@@ -14,4 +14,4 @@ it will not work until you modify so it can send emails.
 
 
 
-Feel free to use it and contribute if you can.
+Feel free to use it.
