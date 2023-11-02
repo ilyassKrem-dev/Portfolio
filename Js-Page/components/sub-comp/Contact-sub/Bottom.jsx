@@ -37,7 +37,7 @@ function Bottom() {
                             </a>
                         </div>
 
-                        <p className="text-white my-5 font-['Nunito']">
+                        <p className="text-white my-5 font-['Nunito'] text-center">
                             <span className="font-bold ">@2023 Ilyass Kremcht</span> All Rights Reserved.</p>
                     </div>
         </>

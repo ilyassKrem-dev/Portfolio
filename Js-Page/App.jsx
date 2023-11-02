@@ -8,7 +8,7 @@ import NoPage from "./components/Nopage";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Navbarmob from "./components/mobile-version/Navbarmob";
-import Homemob from "./components/mobile-version/Homemob";
+
 function App() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
     
@@ -29,8 +29,8 @@ function App() {
         <BrowserRouter>
             <Routes>
               <Route path="/" element={windowWidth >500 ?<Navbar /> : <Navbarmob />}>
-                <Route index element={windowWidth >500 ?<Home /> : <Homemob />} />
-                <Route path="Home" element={windowWidth >500 ?<Home /> : <Homemob />} />
+                <Route index element={<Home />} />
+                <Route path="Home" element={<Home />} />
                 <Route path="About" element={<About />} />
                 <Route path="Skills" element={<Skills />} />
                 <Route path="Work" element={<Work />}/>

@@ -3,7 +3,7 @@ import Learning from "./sub-comp/Skills-sub/Learning"
 import imgData from "./sub-comp/Skills-sub/img-data"
 import { useState } from "react"
 import "../Styles/skills.css"
-
+import Bottom from "./sub-comp/Contact-sub/Bottom"
 function Skills() {
 
     const [usingSkills , setUsingSkills] = useState(imgData.using)
@@ -26,26 +26,27 @@ function Skills() {
     })
     return (
         <>
-        <section className="skills-section h-full ">
-                <div className="section-move">                     
-                    <div className="skills-box">
-                            <h1>SKILLS</h1>
-                    </div>
-                    <div className="skills-info">
-                        
-                        <h5>USING NOW:</h5>
-                        <div className="Lang-using">
-                            {usingSkillsElement}
+            <section className="skills-section h-full ">
+                    <div className="section-move">                     
+                        <div className="skills-box">
+                                <h1>SKILLS</h1>
                         </div>
+                        <div className="skills-info">
+                            
+                            <h5>USING NOW:</h5>
+                            <div className="Lang-using">
+                                {usingSkillsElement}
+                            </div>
 
-                        <h5>LEARNING:</h5>
-                        <div className="Lang-using">
-                            {learningSkillsElement}
+                            <h5>LEARNING:</h5>
+                            <div className="Lang-using">
+                                {learningSkillsElement}
+                            </div>
+                            
                         </div>
-                        
-                    </div>
-                </div> 
-        </section>
+                    </div> 
+            </section>
+            <Bottom />
         </>
     )
 }
