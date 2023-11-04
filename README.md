@@ -1,7 +1,7 @@
 
 
 ### About
-A personal website built using React & tailwindcss and some css
+A personal website built using Vite.js(React) & tailwindcss and some css
 since i didnt start using tailwindcss untill i made half the site.
 
 ### Features
@@ -14,4 +14,4 @@ it will not work until you modify so it can send emails.
 
 
 
-Feel free to use it and contribute if you can.
+Feel free to use it.
